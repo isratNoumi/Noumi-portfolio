@@ -1,0 +1,18 @@
+{
+
+  "servers": {
+
+    "ui-craft": {
+
+      "type": "stdio",
+
+      "command": "npx",
+
+      "args": ["-y", "@chinmoy_mitra/ui-craft@latest"]
+
+    }
+
+  }
+
+}
+ 
