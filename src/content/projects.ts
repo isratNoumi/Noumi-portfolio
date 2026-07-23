@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     title: "PriceScoutAI",
     pitch: "LLM-reasoned shopping across international markets.",
     description:
-      "A full-stack AI agent that helps shoppers find the best place to buy a product across international markets. Uses an LLM as a reasoning layer over deterministic tools — parses freeform requests, searches live retailers with locale-aware currency detection, and explains recommendations with concrete trade-offs.",
+      "An AI agent that helps shoppers find the best place to buy a product across international markets. Uses an LLM as a reasoning layer over deterministic tools — parses freeform requests, searches live retailers with locale-aware currency detection, and explains recommendations with concrete trade-offs.",
     tech: [
       "FastAPI",
       "Pydantic v2",
