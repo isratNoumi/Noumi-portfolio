@@ -50,6 +50,15 @@
       scroll-behavior: auto !important;
     }
   }
+
+  /* Harry Potter wand cursor — hide native cursor on non-touch pointers only */
+  @media (pointer: fine) {
+    html.wand-cursor-active,
+    html.wand-cursor-active body,
+    html.wand-cursor-active * {
+      cursor: none !important;
+    }
+  }
 }
 
 @layer components {

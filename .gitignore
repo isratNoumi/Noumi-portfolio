@@ -32,3 +32,6 @@ pnpm-debug.log*
 
 # ts
 *.tsbuildinfo
+
+# local-only docs (not part of the site build)
+GITHUB_PROFILE_README.md

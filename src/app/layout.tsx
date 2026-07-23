@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CommandPalette } from "@/components/ui/CommandPalette";
+import { WandCursor } from "@/components/ui/WandCursor";
 import "./globals.css";
 
 const themeInitScript = `try{var s=localStorage.getItem('noumi-theme');var t=s||'dark';var r=document.documentElement;if(t==='light'){r.classList.add('light')}else{r.classList.add('dark')}r.style.colorScheme=t}catch(e){}`;
@@ -79,6 +80,7 @@ export default function RootLayout({
           <main className="pt-16">{children}</main>
           <Footer />
           <CommandPalette />
+          <WandCursor />
         </ThemeProvider>
       </body>
     </html>
