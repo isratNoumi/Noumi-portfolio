@@ -21,6 +21,38 @@ const GH = "https://github.com/isratNoumi";
 
 export const PROJECTS: Project[] = [
   {
+    slug: "pricescout-ai",
+    title: "PriceScoutAI",
+    pitch: "LLM-reasoned shopping across international markets.",
+    description:
+      "A full-stack AI agent that helps shoppers find the best place to buy a product across international markets. Uses an LLM as a reasoning layer over deterministic tools — parses freeform requests, searches live retailers with locale-aware currency detection, and explains recommendations with concrete trade-offs.",
+    tech: [
+      "FastAPI",
+      "Pydantic v2",
+      "OpenAI Responses API",
+      "Azure OpenAI",
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "TanStack Query",
+      "Serper.dev",
+      "httpx",
+      "uv",
+      "pytest",
+    ],
+    highlights: [
+      "Product Understanding Agent parses freeform queries like \"Logitech MX Master 3S under $90\" into normalized search intents",
+      "Locale-aware Google Shopping via Serper (gl/hl) — India returns Flipkart/Amazon.in in INR, Bangladesh returns Daraz/Apple Gadgets in BDT",
+      "Deterministic comparison layer computes cheapest, best value, fastest delivery & highest rated — objective math kept out of the LLM to prevent hallucination",
+      "Recommendation Agent weighs total cost, rating confidence (score + review count), delivery speed, stock & store reputation",
+      "Graceful fallback to mock provider + rule-based recommendation when API keys aren't configured — fully usable offline",
+    ],
+    links: { code: GH },
+    featured: true,
+    category: "AI",
+  },
+  {
     slug: "inspectra",
     title: "Inspectra",
     pitch: "AI-powered security assessment platform.",
